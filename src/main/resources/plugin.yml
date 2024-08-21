@@ -1,0 +1,23 @@
+name: AcromCacciaAlTesoro
+version: '1.0'
+main: com.monkey.acromCacciaAlTesoro.AcromCacciaAlTesoro
+api-version: '1.20'
+authors: [ MonkeyMoon104 ]
+
+commands:
+  eventcaccialatesororeload:
+    description: Reloadda il config del mini evento
+    usage: /eventcaccialatesororeload
+    permission: eventcaccialatesoro.reload
+  start-event-mini:
+    description: Avvia forzatamente il minigame
+    usage: /start-event-mini -forced
+    permission: start.eventcaccialatesoro.forced
+
+permissions:
+  eventcaccialatesoro.reload:
+    description: Permette agli utenti con questo permesso di ricaricare la configurazione del minievento
+    default: op
+  start.eventcaccialatesoro.forced:
+    description: Permette agli utenti di avviare forzatamente il mini evento (caccia al tesoro)
+    default: op
